@@ -1,0 +1,17 @@
+// Variables
+
+$use-name-space: true;
+$name-space: "myapp";
+
+$width: 1024px;
+$sidebar: 300px;
+$content-well: $width - $sidebar;
+
+
+$base-width: $width;
+$white: #fff;
+$body: #d5d5d5;
+
+// Media Query Widths
+$respond: $width;
+$small: 480px;

@@ -1,0 +1,51 @@
+body {
+  background: #d5d5d5;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#myapp-wrap {
+  width: 1024px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 1024px) {
+    #myapp-wrap {
+      width: auto; } }
+
+#myapp-header {
+  background-color: #727272;
+  padding: 10px; }
+
+#myapp-main {
+  background-color: #f6f6f6; }
+  #myapp-main:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #myapp-main .myapp-content {
+    padding: 10px 0 10px 10px;
+    width: 70.70313%;
+    float: left; }
+    @media only screen and (max-width: 480px) {
+      #myapp-main .myapp-content {
+        width: 100%;
+        padding: 10px; } }
+  #myapp-main .myapp-sidebar {
+    padding: 10px 0 10px 10px;
+    width: 29.29688%;
+    float: left; }
+    @media only screen and (max-width: 480px) {
+      #myapp-main .myapp-sidebar {
+        width: 100%;
+        padding: 10px; } }
+  #myapp-main .myapp-grid-row {
+    padding: 10px;
+    background-color: #d5d5d5; }
+
+#myapp-footer {
+  padding: 10px;
+  background-color: #c9c9c9; }

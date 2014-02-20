@@ -1,0 +1,39 @@
+@import "base";
+
+##{$name-space}-main {
+	background-color: #f6f6f6;
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.#{$name-space}-content {
+		padding: 10px 0 10px 10px;
+		width: percentage($content-well/$width);
+		float: left;
+
+		@media only screen and (max-width: $small) {
+			width: 100%;
+			padding: 10px;
+		}
+	}
+
+	.#{$name-space}-sidebar {
+		padding: 10px 0 10px 10px;
+		width: percentage($sidebar/$width);
+		float: left;
+
+		@media only screen and (max-width: $small) {
+			width: 100%;
+			padding: 10px;
+		}
+	}
+
+	.#{$name-space}-grid-row {
+		padding: 10px;
+		background-color: #d5d5d5;
+	}
+}
+

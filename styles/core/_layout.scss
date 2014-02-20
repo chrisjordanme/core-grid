@@ -1,0 +1,25 @@
+@import "base";
+
+body {
+	background: $body;
+	font-size: 100%;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+// natural box layout
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+##{$name-space}-wrap {
+	width: $base-width;
+	margin: 0 auto;
+
+	@media only screen and (max-width: $respond) {
+		width: auto;
+	}
+}
